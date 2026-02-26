@@ -1,0 +1,8 @@
+jupyter
+ipykernel
+requests
+python-dotenv
+
+# Formatting and Linting
+black
+ruff

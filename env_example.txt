@@ -1,0 +1,10 @@
+# Glean API Keys for Local Development
+# Copy this file to '.env' and fill in your actual tokens
+# DO NOT commit .env to version control!
+
+# Client API Token (for search operations)
+GLEAN_CLIENT_API=your_client_api_token_here
+
+# Indexing API Token (for document upload operations)
+GLEAN_INDEX_API=your_indexing_api_token_here
+

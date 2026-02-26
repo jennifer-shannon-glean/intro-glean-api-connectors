@@ -1,0 +1,63 @@
+{
+  // Python Interpreter
+  "python.defaultInterpreterPath": "~/venvs/intro-glean-api-connectors/bin/python",
+  "python.terminal.activateEnvironment": true,
+  
+  // Jupyter Notebook Settings
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit"
+  },
+  
+  // Auto-save
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  
+  // Python Formatting - Black
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  
+  // Black Formatter Settings
+  "black-formatter.args": [
+    "--line-length=88"
+  ],
+  
+  // Ruff Linting
+  "ruff.enable": true,
+  "ruff.lint.enable": true,
+  "ruff.lint.run": "onSave",
+  "ruff.organizeImports": true,
+  
+  // Pylance Configuration
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  
+  // AutoDocstring
+  "autoDocstring.docstringFormat": "google",
+  "autoDocstring.startOnNewLine": true,
+  "autoDocstring.generateDocstringOnEnter": true,
+  
+  // File Explorer
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true
+  },
+  
+  // Editor Settings
+  "editor.rulers": [88],
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}

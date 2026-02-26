@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Environment variables (API keys)
+.env
+*.env
+!env_example.txt
+
+# Virtual environments (should be created outside repo)
+.venv
+venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+
+# VS Code / Cursor workspace files (keep settings.json)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Test artifacts
+.env.test_backup
+*.pyc
+__pycache__/
+.pytest_cache/
+.coverage
