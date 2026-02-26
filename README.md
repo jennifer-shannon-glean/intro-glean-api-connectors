@@ -18,12 +18,12 @@ In this lab you will:
 
 ## 🧩 What You Need
 
-- Access to a **Glean instance**  
+- Access to a **Glean instance**
   - Default for this lab: `https://support-lab-be.glean.com`
 - Two API tokens created in **Admin Console → API Tokens**:
   - **Client API Token** (for search operations / Client API)
   - **Indexing API Token** (for document upload / Indexing API)
-- A **custom data source** configured in your Glean instance  
+- A **custom data source** configured in your Glean instance
   (often one per team, e.g. `gleangroup1`)
 
 > In many classes, the **Indexing API token** and **custom data source** are pre-created by an admin or instructor and handed out per group. Students only create the **Client API token**.
@@ -52,20 +52,11 @@ and re-run the configuration cell.
 
 For workshops and new users, **Google Colab is the primary path**. Local VS Code/Cursor setup is optional and documented later.
 
-### Open the Notebook in Colab
-
-**Preferred (works if Colab can read from GitHub):**
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/askscio/glean-enablement/blob/main/intro-glean-api-connectors/notebooks/01-intro-glean-api-connectors.ipynb)
-
-If this opens successfully, continue with **Setup in Colab** below.
-
-> If you see a 403/OAuth error, use the "Download & Upload" option.
 
 #### Download & Upload (fallback, works for everyone)
 
 1. **Download the project**
-   - Go to the main repo: https://github.com/askscio/glean-enablement
+   - Go to the main repo: https://github.com/jennifer-shannon-glean/intro-glean-api-connectors
    - Click **Code → Download ZIP**
    - Extract the ZIP and open `intro-glean-api-connectors/notebooks/`
 
@@ -89,10 +80,10 @@ If this opens successfully, continue with **Setup in Colab** below.
 1. In Colab, click the **🔑 key** icon in the left sidebar.
 2. Click **"+ Add new secret"** and add **two** secrets:
 
-   - **Name:** `GLEAN-CLIENT-API`  
+   - **Name:** `GLEAN-CLIENT-API`
      **Value:** your **Client API token**
 
-   - **Name:** `GLEAN-INDEX-API`  
+   - **Name:** `GLEAN-INDEX-API`
      **Value:** your **Indexing API token** (or the one your instructor provided)
 
 3. Make sure **"Notebook access"** is enabled for both.
